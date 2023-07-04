@@ -92,3 +92,55 @@
 .home_footer_nav_menu ul li:last-child {
     margin-bottom: 0;
 }
+
+@media (min-width: 481px) {
+    /*HEADER*/
+    .home__header--box-logo{
+        width: 90px;
+    }
+
+    .home_header_bars {
+        display: none;
+    }
+
+    .home__header__nav--menu ul{
+        overflow: hidden;
+    }
+
+    .home_header_nav_menu ul li {
+        width: 15%;
+        float: left;
+        font-size: 0.6rem;
+        margin-right: 2%;
+        margin-bottom: 0;
+    }
+    .home_header_nav_menu ul li:last-child{
+        margin-right: 0;
+    }
+    /*MAIN*/
+    .home_main_section_banner {
+        display: block;
+        margin-top: 20px;
+    }
+    .home_main_section_banner img{
+        width: 100%;
+    }
+
+    .home_main_section_products {
+        overflow: hidden;
+    }
+    .home_main_section_article {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+    }
+    .home_main_section_article:nth-child(even){
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .home_header_nav_menu ul li {
+        font-size: 0.8rem;
+    }
+}
