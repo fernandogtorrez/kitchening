@@ -1,4 +1,8 @@
 /* HEADER */
+.home__header{
+    text-align: center;
+}
+
 .home__header--box-logo{
     margin: 15px auto 30px;
     width: 180px;
@@ -12,11 +16,10 @@
 
 .home_header_bars {
     background-color: var(--colorGris);
-    color: #ffff;
     padding: 8px;
+    margin: 0 auto 30px;
     display: inline-block;
     border-radius: 3px;
-    margin-bottom: 20px;
 }
 
 .home_header_nav_menu ul li {
