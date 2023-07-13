@@ -81,16 +81,18 @@
 }
 
 /*FOOTER*/
+
+.home_footer_nav_menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
 .home_footer_nav_menu ul li {
     background-color: var(--colorRojo);
     text-transform: capitalize;
-    margin-bottom: 1px;
     padding: 8px 0;
     text-align: center;
-}
-
-.home_footer_nav_menu ul li:last-child {
-    margin-bottom: 0;
 }
 
 @media (min-width: 481px) {
@@ -103,19 +105,15 @@
         display: none;
     }
 
-    .home__header__nav--menu ul{
-        overflow: hidden;
+    .home_header_nav_menu ul{
+        display: flex;
+        justify-content: space-between;
     }
 
     .home_header_nav_menu ul li {
         width: 15%;
-        float: left;
         font-size: 0.6rem;
-        margin-right: 2%;
         margin-bottom: 0;
-    }
-    .home_header_nav_menu ul li:last-child{
-        margin-right: 0;
     }
     /*MAIN*/
     .home_main_section_banner {
@@ -127,15 +125,12 @@
     }
 
     .home_main_section_products {
-        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .home_main_section_article {
-        float: left;
         width: 49%;
-        margin-right: 2%;
-    }
-    .home_main_section_article:nth-child(even){
-        margin-right: 0;
     }
 }
 
@@ -160,30 +155,27 @@
     .home_main_section_article {
         width: 32%;
     }
-    .home_main_section_article:nth-child(even) {
-        margin-right: 2%;
-    }
-    .home_main_section_article:nth-child(3n) {
-        margin-right: 0;
-    }
     /*FOOTER*/
     .home_footer {
-        overflow: hidden;
+        margin-top: 30px;
+        padding: 60px 0;
+        display: flex;
+        justify-content: center;
         background-color: var(--colorRojo);
         border-radius: 25px 25px 0 0;
     }
 
+    .home_footer nav ul{
+        flex-direction: row;
+    }
+
+
     .home_footer nav ul li {
-        display: inline;
+        width: 110px;
+        border-right: 1px solid #ffffff;
     }
 
-    .home_footer a {
-        text-transform: capitalize;
-    }
-
-    .home_footer_nav_menu {
-        padding-top: 35px;
-        padding-bottom: 35px;
-        text-align: center;
+    .home_footer_nav_menu ul li:last-child{
+        border-right: none;
     }
 }
